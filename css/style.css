@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    border: solid 1px transparent;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: ;
+    background-color: white;
+    height: 2.5em;
+}
+
+.navegacion {
+    position: relative;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul {
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: .5em;
+}
+
+nav ul li ul {
+    position: absolute;
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+    width: 180px;
+    list-style: none;
+    background-color: white;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+}
+
+nav ul li ul li {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-bottom: solid 1px #F2D0C4;
+}
+
+header {
+    background-image: url(../img/banner_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45em;
+}
+
+header h1 {
+    display: none;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+}
+
+section:nth-child(1), section:nth-child(3){
+    background-color: #A6695B;
+    height: 36.4375em;
+    display: flex;
+}
+
+section:nth-child(2) {
+    height: 37.5em;
+    background-color: #F2D0C4;
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
+}
+
+section div {
+    margin-left: 8em;
+    margin-top: 6em;
+    width: 28.125em;
+    color: white;
+    line-height: 1.5em;
+}
+
+section:nth-child(2) div {
+    color: black;
+}
+
+section div p:nth-of-type(2) {
+    padding-top: 2em;
+}
+
+section:nth-of-type(2) div {
+    margin-left: 0;
+    margin-right: 8em;
+}
+
+section div p:first-of-type {
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+div a {
+    text-decoration: none; 
+    color: white;
+    border: solid 2px white;
+    padding: .5em 2em;
+    line-height: 10em;
+}
+
+section:nth-of-type(2) div a {
+    color: black;
+    border:  solid 2px black;
+}
+
+aside {
+    height: 20em;
+    background-color: #40070C;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+aside h2 {
+    text-align: center;
+    font-size: 7em;
+    font-weight: 400;
+    letter-spacing: 15px;
+    padding-top: 1.5rem;
+}
+
+aside span {
+    font-size: 3.5rem;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+
+aside p:nth-of-type(1) {
+    font-size: 2.7em;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 9px;
+    padding-top: 1rem;
+}
+
+aside p:nth-of-type(2) {
+    text-align: center;  
+    padding-top: 2rem;
+}
+
+footer {
+    background-color: #D9A796;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    height: 12em;
+}
+
+footer ul {
+    padding-top: 1.7em;
+}
+
+footer ul li {
+    list-style: none;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 400;
+    text-decoration: overline;
+}
+
+footer ul li:nth-child(2) {
+    font-weight: 300;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding-top: .3em;
+}
+
+footer div {
+    padding-top: 1.5em;
+    text-align: center;
+}
+
+footer div img {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 1em;
+    font-size: .85em;
+}
+
+/*Seccion Informacion*/
+
+#infoh {
+    background-image: url(../img/banner_info.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35em;
+}
+
+#hist, #mision, #vision, #valores, #metas {
+    display: block;
+    padding: 2em 5em 0 5em;
+}
+
+#hist {
+    margin-top: 3em;
+    background-color: white;
+}
+
+#hist p {
+    margin-top: 2em;
+    width: 700px;
+    line-height: 25px;
+}
+
+#hist img {
+    float: right;
+}
+
+#mision {
+    background-color: #40070C;
+    color: white;
+    height: 33em;
+    width: 690px;
+    float: left;
+}
+
+#mision p {
+    margin-top: 2em;
+    width: 500px;
+    line-height: 25px;
+}
+
+#vision {
+    background-color: #40070C;
+    color: white;
+    height: 33em;
+    width: 690px; 
+    margin-left: 655px;
+}
+
+#vision p {
+    margin-top: 2em;
+    width: 500px;
+    line-height: 25px;
+}
+
+#vision li {
+    margin-top: 1em;
+    width: 500px;
+    line-height: 25px;
+}
+
+#valores {
+    height: 37em;
+    width: 690px;
+    float: left;
+}
+
+#valores p {
+    margin-top: 2em;
+    width: 500px;
+    line-height: 25px;
+}
+
+#valores li {
+    margin-top: 1em;
+    width: 500px;
+    line-height: 25px;
+}
+
+#metas {
+    height: 37em;
+    width: 690px; 
+    margin-left: 655px;
+}
+
+#metas p {
+    margin-top: 2em;
+    width: 500px;
+    line-height: 25px;
+}
+
+#metas li {
+    margin-top: 1em;
+    width: 500px;
+    line-height: 25px;
+}
+
+/*Seccion Productos*/
+
+#prodh {
+    background-image: none;
+    height: 0;
+}
+
+#jean {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 34em;
+    background-color: #F2D0C4;
+}
+
+#jean div {
+    width: 250px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: black;
+}
+
+#jean p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+#jean div p:nth-of-type(2) {
+    padding-top: 1rem;
+}
+
+#jean a {
+    line-height: 5rem;
+    padding-left: 5.8em;
+    padding-right: 5.8em;
+    color: black;
+    border: solid 2px black;
+}
+
+#buzo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 34em;
+    background-color: #A6695B;
+}
+
+#buzo div {
+    width: 250px;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    color: white
+}
+
+#buzo div p:nth-of-type(2) {
+    padding-top: 1rem;
+}
+
+#buzo p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+#buzo a {
+    line-height: 5rem;
+    padding-left: 5.8em;
+    padding-right: 5.8em;
+    color: white;
+    border: solid 2px white;
+}
+
+#inv {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 34em;
+    background-color: #40070C;
+}
+
+#inv div {
+    width: 250px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#inv div p:nth-of-type(2) {
+    padding-top: 1rem;
+}
+
+#inv p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+#inv a {
+    line-height: 5rem;
+    padding-left: 5.8em;
+    padding-right: 5.8em;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 200%;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+         margin-left: 0;
+    }
+    55% {
+        margin-left: -100%;
+    }
+    
+    100% {
+        margin-left: -100%;
+    }
+}
+
